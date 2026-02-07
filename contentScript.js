@@ -1,4 +1,6 @@
-//Content script for TabIntent Chrome extension
+//context script for TabIntent extension
+
+const INTENTS = ["Read later", "Research", "Work task", "Shopping", "Just curious"];
 
 /* -------------------- Utilities -------------------- */
 function isRealWebUrl(url) {
