@@ -1,0 +1,100 @@
+#tabintent-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 2147483647;
+    background: rgba(0, 0, 0, 0.15);
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding-top: 24px;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  }
+  
+  #tabintent-overlay .ti-card {
+    width: min(520px, calc(100vw - 24px));
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.25);
+    padding: 14px 14px 12px;
+    border: 1px solid rgba(0,0,0,0.08);
+  }
+  
+  #tabintent-overlay .ti-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #111827;
+  }
+  
+  #tabintent-overlay .ti-subtitle {
+    font-size: 13px;
+    color: #4b5563;
+    margin-top: 4px;
+    margin-bottom: 10px;
+  }
+  
+  #tabintent-overlay .ti-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  
+  #tabintent-overlay .ti-chip {
+    border: 1px solid rgba(0,0,0,0.14);
+    background: #fff;
+    border-radius: 999px;
+    padding: 8px 10px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  
+  #tabintent-overlay .ti-chip.active {
+    border-color: rgba(17, 24, 39, 0.9);
+    background: rgba(17, 24, 39, 0.06);
+  }
+  
+  #tabintent-overlay .ti-note {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0,0,0,0.14);
+    font-size: 13px;
+    outline: none;
+  }
+  
+  #tabintent-overlay .ti-note:focus {
+    border-color: rgba(17, 24, 39, 0.7);
+  }
+  
+  #tabintent-overlay .ti-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  
+  #tabintent-overlay .ti-btn {
+    border-radius: 10px;
+    padding: 8px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid rgba(0,0,0,0.14);
+    background: #fff;
+  }
+  
+  #tabintent-overlay .ti-btn.ti-save {
+    border-color: rgba(17,24,39,0.9);
+  }
+  
+  #tabintent-overlay .ti-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  #tabintent-overlay .ti-hint {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #6b7280;
+  }
+  

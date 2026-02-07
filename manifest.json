@@ -1,0 +1,24 @@
+{
+    "name": "TabIntent – Why did I open this?",
+    "description": "Asks your intent when you open a tab, remembers it, and reminds you later.",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "action": {
+      "default_title": "TabIntent",
+      "default_popup": "popup.html"
+    },
+    "options_page": "options.html",
+    "permissions": ["tabs", "storage", "alarms", "notifications", "scripting"],
+    "host_permissions": ["<all_urls>"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["contentScript.js"],
+        "run_at": "document_idle"
+      }
+    ]
+  }
+  

@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>TabIntent</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="top">
+        <div>
+          <div class="h1">TabIntent</div>
+          <div class="sub">Search tabs by <b>intent</b>, not URL.</div>
+        </div>
+        <div class="top-actions">
+          <button id="openOptions" class="btn">Settings</button>
+        </div>
+      </div>
+
+      <div class="counters">
+        <div class="counter"><span class="k">Saved</span><span id="savedCount" class="v">0</span></div>
+        <div class="counter"><span class="k">Skipped</span><span id="skippedCount" class="v">0</span></div>
+      </div>
+
+      <input id="q" class="search" placeholder="Search: intent, note, title…" />
+
+      <div class="filters">
+        <select id="intentFilter">
+          <option value="">All intents</option>
+          <option>Read later</option>
+          <option>Research</option>
+          <option>Work task</option>
+          <option>Shopping</option>
+          <option>Just curious</option>
+        </select>
+
+        <button id="clearAll" class="btn danger">Clear all</button>
+      </div>
+
+      <div id="list" class="list"></div>
+      <div id="empty" class="empty" hidden>No saved intents yet. Open a tab to start.</div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
